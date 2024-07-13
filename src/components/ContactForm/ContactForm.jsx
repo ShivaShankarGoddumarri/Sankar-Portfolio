@@ -163,7 +163,7 @@ const ContactForm = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const recipientEmail = "ss3177806@gmail.com"; // Replace with your recipient's email address
+  const recipientEmail = "ysankarmukesh@gmail.com";
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -188,12 +188,6 @@ const ContactForm = () => {
 
   return (
     <Section id="contact">
-      {isSubmitted ? (
-        <div className="confirmation-message text-lg">
-          <img src="SentMail.svg" alt="svg" />
-          Wait a second! We will redirect you to your email.
-        </div>
-      ) : (
         <>
           <Details>
             <p className="sub--title" data-aos="zoom-in-down">Get In Touch</p>
@@ -236,7 +230,6 @@ const ContactForm = () => {
             </ButtonContainer>
           </FormContainer>
         </>
-      )}
     </Section>
   );
 };

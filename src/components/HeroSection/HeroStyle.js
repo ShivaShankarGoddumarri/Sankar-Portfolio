@@ -316,12 +316,9 @@ export const ResumeButton = styled.a`
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.3s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    ${'' /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2),  -20px -20px 60px rgba(0, 0, 0, 0.2);   */}
+    transition: all 0.3s ease-in-out;
+    background-color: ${({ theme }) => theme.primary};
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2),  -20px -20px 60px rgba(0, 0, 0, 0.2);  
     transform: translateZ(0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -330,7 +327,7 @@ export const ResumeButton = styled.a`
         transition: all 0.4s ease-in-out;
         ${'' /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.4),
                     -20px -20px 60px rgba(0, 0, 0, 0.4); */}
-        background: linear-gradient(225deg, hsla(271, 100%, 60%, 1) 0%, hsla(294, 100%, 60%, 1) 100%);
+        ${'' /* background: linear-gradient(225deg, hsla(271, 100%, 60%, 1) 0%, hsla(294, 100%, 60%, 1) 100%); */}
         filter: brightness(1.2);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
     }

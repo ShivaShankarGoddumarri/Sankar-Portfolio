@@ -112,14 +112,14 @@ function Footer({toggleTheme, darkMode}) {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Shiva Shankar Goddumarri</Logo>
+        <Logo>Sankar Mukesh Yalamandla</Logo>
 
         <SocialMediaIcons>
-          <SocialMediaIcon href="mailto:ss3177806@gmail.com" target="display" title='Email'><EmailIcon /></SocialMediaIcon>
-          <SocialMediaIcon href="http://www.linkedin.com/in/shiva-shankar-goddumarri-458341196" target="display" title='LinkedIn'><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href="https://www.instagram.com/shiva_shankar__goddumarri/" target="display" title='Instagram'><InstagramIcon /></SocialMediaIcon>
-          <SocialMediaIcon href="tel:+91 0123456789" target="display" title='Phone'><PhoneIcon /></SocialMediaIcon>
-          <SocialMediaIcon href="https://wa.me/0123456789" target="display" title='Whatsapp'><WhatsAppIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="mailto:ysankarmukesh@gmail.com" target="display" title='Email'><EmailIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://www.linkedin.com/in/sankar-mukesh-yalamandla-2b0946199/" target="display" title='LinkedIn'><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://www.instagram.com/sanmuk25/?hl=en" target="display" title='Instagram'><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="tel:+91 919912114088" target="display" title='Phone'><PhoneIcon /></SocialMediaIcon>
+          <SocialMediaIcon href="https://wa.me/9912114088" target="display" title='Whatsapp'><WhatsAppIcon /></SocialMediaIcon>
           <SocialMediaIcon
                 title={darkMode ? "Light Mode" : "Dark Mode"}
                 onClick={toggleTheme}

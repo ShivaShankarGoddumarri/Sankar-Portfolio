@@ -19,26 +19,6 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="projects">
       <Wrapper>
         <Title  data-aos="zoom-in-down">PROJECTS</Title>
-        <ToggleButtonGroup data-aos="zoom-in-up">
-          {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-            :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
-            :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APP'S</ToggleButton>
-          }
-          <Divider />
-          {toggle === 'Self Core Projects' ?
-            <ToggleButton active value="Self Core Projects" onClick={() => setToggle('Self Core Projects')}>Self Core Projects</ToggleButton>
-            :
-            <ToggleButton value="Self Core Projects" onClick={() => setToggle('Self Core Projects')}>Self Core Projects</ToggleButton>
-          }
-          
-        </ToggleButtonGroup>
         <CardContainer data-aos="zoom-in-down">
           {toggle === 'all' && projects.map((project) => (
             <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}  key={project.id} />

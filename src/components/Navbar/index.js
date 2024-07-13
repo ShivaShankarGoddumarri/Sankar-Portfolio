@@ -21,7 +21,7 @@ import {
   // MobileNavLogo,
   MobileLink,
 } from "./NavbarStyledComponent";
-import { FaCode } from 'react-icons/fa';
+import { FaCode } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
@@ -108,7 +108,8 @@ const Navbar = ({ toggleTheme, darkMode }) => {
               cursor: "pointer",
             }}
           >
-<FaCode size="2rem" /> <Span>Sankar</Span>    </a>
+            <FaCode size="2rem"  /> <Span>Sankar</Span>{" "}
+          </a>
         </NavLogo>
         <MobileIcon>
           <ThemeMobileIcon

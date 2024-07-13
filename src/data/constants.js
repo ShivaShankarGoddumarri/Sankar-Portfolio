@@ -1,3 +1,5 @@
+import { Score } from "@mui/icons-material";
+
 export const Bio = {
   name: "Sankar Mukesh",
   roles: [
@@ -164,41 +166,40 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-   
     school: "Jawaharlal Nehru Technological University, Anantapur",
     date: "June 2018 - July 2022",
     degree: "Bachelor of Technology",
-    branch: "Electronics and Communication Engineering"
+    branch: "Computer Science & Engineering",
+    score: "83%"
   },
      
   {
     id: 1,
-   
-    school: "Sri Sai Krupa Junior College, Dharmavaram",
+    school: "Sri Masters Junior College",
     date: "March 2016 - March 2018",
     degree: "Intermediate",
-    branch: "MPC"
-
+    branch: "MPC",
+ score: "96%"
   },
   {
     id: 2,
-    
-    school: "Sri Gayathri English Medium High School, Dharmavaram",
+    school: "Sadhana English Medium High School",
     date: "March 2015 - March 2016",
     degree: "Class X",
-    branch: "SSC"
+    branch: "SSC",
+     score: "97%"
   },
 ];
 
 export const projects = [
   {
     id: 0,
-    title: "BeyInc",
-    date: "December 2023 - Present",
+    title: "FSD",
+    date: "April - July",
     description:
-      "This project is an innovative social media platform designed to facilitate connections between entrepreneurs, mentors, and investors. This platform aims to nurture startup ideas by providing a collaborative space where entrepreneurs can seek guidance, share their visions, and secure investment opportunities. By bridging the gap between startup enthusiasts and seasoned professionals, our platform fosters an environment conducive to business growth and innovation.",
+      "Effortlessly create and manage projects, assign tasks, and track progress to achieve your goals. Stay organized and monitor your team's task status and completion with ease.",
     image:
-      "https://github.com/ShivaShankarGoddumarri/User-Images/assets/96565316/0dceca9a-3d50-433d-ba7e-634ff5f828f7",
+      "https://github.com/user-attachments/assets/765449a4-638d-4c43-a3ca-69c716b82077",
     tags: [
       "HTML",
       "CSS",
@@ -206,10 +207,15 @@ export const projects = [
       "React",
       "Redux",
       "Material UI",
+     "MongoDB","Express","Node JS"
+      ,
     ],
-    category: "web app",
-    github: "",
-    webapp: "https://www.beyinc.org/",
+    githubLinks: [
+      { "name": "Frontend", "link": "https://github.com/Sankarmukesh/FSD_Frontend" },
+      { "name": "Backend", "link": "https://github.com/Sankarmukesh/FSD_backend" },
+      { "name": "Socket", "link": "https://github.com/Sankarmukesh/FSD_Socket" }
+    ],
+    webapp: "https://fsd-frontend.vercel.app/",
   },
 
 ];
