@@ -41,13 +41,14 @@ const CompanyDetails = styled.div`
 const CompanyName = styled.h3`
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: ${({ theme }) => theme.primary};
+
   margin-bottom: 0px;
 `;
 
 const CompanyType = styled.p`
   font-size: 14px;
-  color: #777;
+  color: ${({ theme }) => theme.text_secondary};
   margin-top: 0px;
 `;
 
@@ -100,8 +101,8 @@ const RoleInfo = styled.div`
 
 const RolePosition = styled.h3`
   font-size: 20px;
-  font-weight: bold;
-  color: #333;
+  padding: 30px 0 0 0;
+  color: ${({ theme }) => theme.primary};
   margin-bottom: 5px;
 `;
 
