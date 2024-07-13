@@ -182,7 +182,7 @@ export const HeroRightContainer = styled.div`
     order: 1;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
   }
   @media (max-width: 640px) {
     margin-top: -60px;
@@ -197,8 +197,8 @@ export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 450px;
+  max-height: 500px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
   @media (max-width: 768px) {
