@@ -156,8 +156,8 @@ const Card = styled.div`
     &:hover {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         transform: translateY(-5px);
-        border: 2px solid #854CE6;
-        background: rgba(133, 76, 230, 0.05);
+        border: 2px solid  ${({ theme }) => theme.primary};
+        background:  ${({ theme }) => theme.card_hover_bg};
     }
 
     @media only screen and (max-width: 768px) {

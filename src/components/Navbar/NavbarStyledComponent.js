@@ -1,8 +1,6 @@
-import { Link as LinkR } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
-import _default from '../../themes/default';
-
-
+import { Link as LinkR } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
+import _default from "../Projects/themes/default";
 
 const slideDown = keyframes`
   0% {
@@ -70,7 +68,6 @@ export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
   font-size: 18px;
-
 `;
 
 export const NavItems = styled.ul`
@@ -99,7 +96,7 @@ export const NavLink = styled.a`
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
@@ -136,7 +133,7 @@ export const GitHubButton = styled.a`
   font-size: 16px;
   overflow: hidden;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -188,21 +185,21 @@ export const MobileIcon = styled.div`
 `;
 
 export const MobileMenu = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 16px;
-position: absolute;
-top: 68px;
-right: 0;
-width: 100%;
-padding: 12px 40px 24px 40px;
-background: ${({ theme }) => theme.card_light};
-animation: ${({ isOpen }) => (isOpen ? slideDown : slideUp)} 0.6s ease-in-out;
-border-radius: 0 0 20px 20px;
-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.card_light};
+  animation: ${({ isOpen }) => (isOpen ? slideDown : slideUp)} 0.6s ease-in-out;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
 export const MobileMenuItems = styled.ul`

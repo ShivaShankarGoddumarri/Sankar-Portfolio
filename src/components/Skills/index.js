@@ -145,8 +145,8 @@ const Skill = styled.div`
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
-    border: 1.2px solid #854CE6;
-    background-color: rgba(133, 76, 230, 0.05);
+    border: 1.2px solid ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.card_hover_bg};
     ${SkillTitle}{
       color: ${({ theme }) => theme.text_primary};
     }
@@ -155,7 +155,7 @@ const Skill = styled.div`
       animation: ${spinInAnimation} 1s linear forwards;
     }
     ${SkillItem}{
-      background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+      background: ${({ theme }) => theme.primary};
       border-color: rgb(133, 76, 230);
       color: white;
     }

@@ -87,62 +87,39 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `;
 
 const Button = styled.button`
-  width: 140px;
-  height: 40px;
-  border: none;
   border-radius: 10px;
-  background: linear-gradient(
-    to right,
-    #5a29a4,
-    #854ce6,
-    #5a29a4,
-    #5a29a4,
-    #854ce6,
-    #5a29a4
-  );
-  background-size: 250%;
-  background-position: left;
-  color: ${({ theme }) => theme.primary};
-  position: relative;
+  padding: 10px;
+  color: ${({ theme }) => theme.text_primary};
+  background-color: ${({ theme }) => theme.primary};
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-duration: 1s;
-  overflow: hidden;
-
-  &:before {
-    position: absolute;
-    content: "SUBMIT";
-    color: ${({ theme }) => theme.primary};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 97%;
-    height: 90%;
-    border-radius: 8px;
-    transition-duration: 1s;
-    background-color: rgba(0, 0, 0, 0.842);
-    background-size: 200%;
-  }
+  transition: background-color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background-position: right;
-    transition-duration: 1s;
-  }
-
-  &:hover::before {
-    background-position: right;
-    transition-duration: 1s;
-  }
-
-  &:active {
-    transform: scale(0.95);
+    background-color: ${({ theme }) => {
+      const color = theme.primary;
+      const { r, g, b } = hexToRgb(color);
+      return `rgba(${r}, ${g}, ${b}, 0.8)`; // Slightly more transparent on hover
+    }};
+    transform: translateY(-2px); // Slight lift effect on hover
   }
 `;
+
+// Helper function to convert hex to RGB
+const hexToRgb = (hex) => {
+  const bigint = parseInt(hex.slice(1), 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+  return { r, g, b };
+};
+
 
 const ContactForm = () => {
   useEffect(() => {
@@ -226,7 +203,7 @@ const ContactForm = () => {
                 type="button"
                 onClick={handleClick}
                 disabled={isDisabled}
-              />
+              >Submit</Button>
             </ButtonContainer>
           </FormContainer>
         </>

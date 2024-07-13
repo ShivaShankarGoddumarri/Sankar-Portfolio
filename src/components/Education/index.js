@@ -89,7 +89,7 @@ const Education = ({darkMode}) => {
       <Container id="education">
         <Title data-aos="zoom-in-down">EDUCATION</Title>
         <Wrapper>
-        {darkMode ?  <Image src="Education.svg" alt="Image" data-aos="fade-right" /> :  <Image src="EducationWhite.svg" alt="Image" data-aos="fade-right" />}
+        {darkMode ?  <Image src="Education.svg" alt="Image" data-aos="fade-right" /> :  <Image src="Education.svg" alt="Image" data-aos="fade-right" />}
         <EducationWrapper >
             {education.map((education, index) => (
               <EducationCard 

@@ -100,7 +100,7 @@ const MyComponent = ({darkMode}) => {
         <Title data-aos="zoom-in-down">EXPERIENCE</Title>
             <Wrapper >
                 <LeftContainer>
-                    {darkMode ?  <Image src="Work.svg" alt="Image" data-aos="fade-right" /> :  <Image src="WorkWhite.svg" alt="Image" data-aos="fade-right" />}
+                    {darkMode ?  <Image src="Work.svg" alt="Image" data-aos="fade-right" /> :  <Image src="Work.svg" alt="Image" data-aos="fade-right" />}
                 </LeftContainer>
                 <RightContainer>
                     {experiences.map((experience, index) => (

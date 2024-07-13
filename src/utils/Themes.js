@@ -11,6 +11,7 @@ export const darkTheme = {
     black: "#000000",         // Pure black for deep contrast
     logo: "#00ADB5",          // Cyan logo for visibility
     border: "rgba(40, 40, 40, 0.6)", // Subtle border color
+    card_hover_bg: "rgba(0, 173, 181, 0.2)"
 }
 export const lightTheme = {
     bg: "#f7f8fd",            // Very light background
@@ -25,4 +26,5 @@ export const lightTheme = {
     black: "#000000",         // Pure black for deep contrast
     logo: "#00ADB5",          // Cyan logo for visibility (same as dark theme for consistency)
     border: "rgba(240, 240, 240, 0.6)", // Subtle border color
+    card_hover_bg: "rgba(0, 173, 181, 0.1)"
 }
